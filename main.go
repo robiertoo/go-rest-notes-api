@@ -4,6 +4,8 @@ import (
 	"rest-api/database"
 
 	"github.com/gofiber/fiber/v2"
+
+	"rest-api/router"
 )
 
 func main() {
@@ -11,10 +13,7 @@ func main() {
 
 	database.ConnectDB()
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		err := c.SendString("And the api is up!")
-		return err
-	})
+	router.SetupRoutes(app)
 
 	app.Listen(":3000")
 }

@@ -6,7 +6,7 @@ import (
 
 type Note struct {
 	gorm.Model
-	ID       uint `gorm:"primaryKey"`
+	ID       uint `gorm:"primaryKey;autoIncrement"`
 	Title    string
 	SubTitle string
 	Text     string

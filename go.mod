@@ -3,7 +3,7 @@ module rest-api
 go 1.15
 
 require (
-	github.com/gofiber/fiber/v2 v2.31.0 // indirect
+	github.com/gofiber/fiber/v2 v2.31.0
 	github.com/google/uuid v1.3.0
 	github.com/joho/godotenv v1.4.0
 	github.com/klauspost/compress v1.15.1 // indirect
